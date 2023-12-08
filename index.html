@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock, Paper, Scissors</title>
     <script src="script.js" defer></script>
-</head>
-<body>
-    <h2>This game is played from the console</h2>
-    <button>A</button>
-    <button>B</button>
-    <button>C</button>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+    <div id="score">
+      <p>Player <strong>0 : 0</strong> Computer</p>
+    </div>
+    <div id="game-display">
+      <p class="hand-display">✊</p>
+      <p>VS</p>
+      <p class="hand-display">✊</p>
+    </div>
+    <p>It's a tie! You both chose ROCK!</p>
+
+    <div id="move-display">
+      <h2>Choose your move</h2>
+      <div>
+        <button class="btn">✊</button>
+        <button class="btn">✋</button>
+        <button class="btn">✌️</button>
+      </div>
+    </div>
+    <button id="restart-button">Restart Game</button>
+  </body>
 </html>
