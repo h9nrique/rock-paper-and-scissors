@@ -8,25 +8,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Rock, Paper, Scissors</h1>
+    <h1 id="game-name">Rock, Paper, Scissors</h1>
     <div id="score">
-      <p>Player <strong>0 : 0</strong> Computer</p>
+      <p>Player <strong id="score-numbers">0 : 0</strong> Computer</p>
     </div>
     <div id="game-display">
-      <p class="hand-display">✊</p>
+      <p class="hand-display-player">❔</p>
       <p>VS</p>
-      <p class="hand-display">✊</p>
+      <p class="hand-display-computer">❔</p>
     </div>
-    <p>It's a tie! You both chose ROCK!</p>
+    <p id="winner-message">First to reach 5 points wins the game!</p>
 
     <div id="move-display">
       <h2>Choose your move</h2>
-      <div>
-        <button class="btn">✊</button>
-        <button class="btn">✋</button>
-        <button class="btn">✌️</button>
+      <div class="btn">
+        <button id="rock-btn">✊</button>
+        <button id="paper-btn">✋</button>
+        <button id="scissors-btn">✌️</button>
       </div>
     </div>
     <button id="restart-button">Restart Game</button>
+    <div id="overlay">
+        <div id="overlay-container">
+            <p id="trophy-overlay"></p>
+            <h2 id="winner-overlay">AAAAAAAAAAAAA</h2>
+            <button id="btn-overlay">Play again</button>
+        </div>
+    </div>
   </body>
 </html>
